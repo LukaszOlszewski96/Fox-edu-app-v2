@@ -1,0 +1,31 @@
+.navigation-bar-conteiner{
+    width: 45%;
+    height: auto;
+    float: right;
+    display: flex;
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+    color: #ffff;
+}
+.link-menu{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-left:50px;
+    font-size: 18px;
+    text-align: center;
+}
+.login-button{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 40px;
+    margin-top: 20px;
+    background: linear-gradient(330.53deg, #D40000 -15.77%, #F76343 28.41%, #FC6F6F 98.47%);
+    box-shadow: 4px 8px 16px rgba(0, 27, 111, 0.2);
+    border-radius: 20px;
+}
+
