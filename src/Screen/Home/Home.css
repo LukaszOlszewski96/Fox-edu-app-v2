@@ -1,6 +1,6 @@
 .home-conteiner{
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    height: 100%;
     display: block;
     background-color: #1F1F47;
 }
@@ -17,4 +17,66 @@
 .text{
     text-align: center;
     margin-top: 100px;
+}
+.horizontal-box-links{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.li-effect{
+    width: 130px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: linear-gradient(330.53deg, #D40000 -15.77%, #F76343 28.41%, #FC6F6F 98.47%);
+    box-shadow: 4px 8px 16px rgba(0, 27, 111, 0.2);
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.li{
+    width: 130px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: linear-gradient(154.49deg, rgba(121, 117, 131, 0.2) 5.35%, rgba(54, 53, 103, 0.2) 83.85%), rgba(49, 48, 54, 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.horizontal-box-courses{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+.left-navigation-button{
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    display: flex;
+    background: linear-gradient(154.49deg, rgba(121, 117, 131, 0.2) 5.35%, rgba(54, 53, 103, 0.2) 83.85%), rgba(49, 48, 54, 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 40px;
+    position: relative;
+    left: 200px;
+}
+.right-navigation-button{
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    display: flex;
+    background: linear-gradient(154.49deg, rgba(121, 117, 131, 0.2) 5.35%, rgba(54, 53, 103, 0.2) 83.85%), rgba(49, 48, 54, 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 40px;
+    position: relative;
+    right: 200px;
+}
+.icon-arrow{
+    font-size: 40px;
+    position: relative;
+    top: 7px;
 }
