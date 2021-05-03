@@ -1,0 +1,116 @@
+ .exit-login{
+     font-size: 4vw;
+     color: #fff;
+     float: right;
+     margin-right: 1vw;
+     margin-top: 1vw;
+ }
+ .horizontal-login{
+     display: flex;
+     width: 100vw;
+     height: auto;
+     justify-content: center;
+     position: relative;
+     top: 2vw;
+ }
+ .login-conteiner{
+     width:  30vw;
+     height: auto;
+     display: block;
+ }
+ .login-image{
+     width: auto;
+     height: auto;
+     position: relative;
+     right: 10vw;
+     top: 3vw;
+ }
+ .login-image img{
+     height: 20vw;
+     width: 20vw;
+ }
+ .text-login{
+     color: #ffff;
+     font-size: 1.6vw;
+ }
+.input-form{
+    display: flex;
+    width: 20vw;
+    border: #2f2f4ea1 solid 2px;
+    border-radius: 1vw;
+    margin-bottom: 1.5vw;
+    margin-left: 1vw;
+}
+.icon-form{
+    color:#ffff;
+    font-size: 1.5vw;
+    margin-left: 1vw;
+    padding-top: .3vw;
+    padding-bottom: .3vw;
+}
+.input-text{
+    color: #ffff;
+    font-size: 1vw;
+    margin-left: 1vw;
+    width: 15vw;
+    background-color: #1F1F47;
+    outline: none;
+    border: none;
+}
+.remaind-password{
+    font-size: 1vw;
+    color: #ffff;
+    float: right;
+    position: relative;
+    right: 10vw;
+    margin-top:.5vw;
+}
+.button-Login{
+    outline: none;
+    background-color: #1F1F47;
+    border: solid 2px  #2f2f4ea1;
+    border-radius: 1vw;
+    color: #ffff;
+    font-size: 1.5vw;
+    padding-bottom: 0.5vw;
+    padding-top: 0.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    position: relative;
+    left:6vw;
+    margin-top: 5vw;
+    cursor: pointer;
+}
+.auth-box{
+    width: auto;
+    height: auto;
+    position: relative;
+    display: flex;
+    left:7vw;
+    top: 1.5vw;
+}
+.facebook-auth{
+    font-size: 2.5vw;
+    color: #ffff;
+    margin-top: 0.1vw;
+    margin-right: 1vw;
+}
+.gmail-auth{
+    font-size: 2.9vw;
+    color: #ffff;
+    margin-left:1vw;
+}
+.text-register{
+    font-size: 1vw;
+    color: #fff;
+    position: relative;
+    top:2.3vw;
+    left:2.5vw;
+}
+.text-register a{
+    font-size: 1.2vw;
+    color: #fff;
+    font-weight: bold;
+}
+
+
