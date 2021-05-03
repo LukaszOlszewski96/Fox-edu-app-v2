@@ -1,5 +1,5 @@
  .exit-login{
-     font-size: 4vw;
+     font-size: 3vw;
      color: #fff;
      float: right;
      margin-right: 1vw;
@@ -30,8 +30,15 @@
      width: 20vw;
  }
  .text-login{
+    color: #ffff;
+    font-size: 1.6vw;
+}
+ .text-register{
      color: #ffff;
      font-size: 1.6vw;
+     margin-bottom:5vw;
+     position: relative;
+     left:5vw;
  }
 .input-form{
     display: flex;

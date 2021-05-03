@@ -1,0 +1,53 @@
+.register-conteiner{
+    width: 100vw;
+    height:100%;
+    display: block;
+    overflow: hidden;
+}
+.back-to-login{
+    color: #fff;
+    font-size: 3vw;
+    position: relative;
+    left:1vw;
+    top:1vw;
+}
+.register-box{
+    position: relative;
+    left: 40vw;
+}
+.title-register{
+    color: #ffff;
+    font-size: 1.6vw;
+}
+.subscription{
+    color: #fff;
+    font-size: .7vw;
+    position: relative;
+    left:2vw;
+}
+.button-register{
+    outline: none;
+    background-color: #1F1F47;
+    border: solid 2px  #2f2f4ea1;
+    border-radius: 1vw;
+    color: #ffff;
+    font-size: 1.5vw;
+    padding-bottom: 0.5vw;
+    padding-top: 0.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    position: relative;
+    top: 4vw;
+    right: 10vw;
+    cursor: pointer;
+}
+.political{
+    font-size: .7vw;
+    color: #fff;
+    position: relative;
+    top: 7vw;
+    left:2vw;
+}
+.political a{
+    font-weight: bold;
+}
