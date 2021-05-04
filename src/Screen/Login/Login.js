@@ -5,8 +5,37 @@ import {RiLockPasswordLine} from 'react-icons/ri';
 import {AiFillGoogleCircle} from 'react-icons/ai';
 import {SiFacebook} from 'react-icons/si';
 import {AiOutlineCloseSquare} from 'react-icons/ai';
+import { auth, providerGoogle } from '../../Firebase/Firebase';
 
 function Login() {
+
+    //google auth system:
+    const signWithGoogle =()=>{
+
+        providerGoogle.setCustomParameters({prompt:'select_account'});
+        auth().signInWithPopup(providerGoogle).then(
+            function(result){
+                //Gives Google Access Token. Google API.
+                var token = result.credential.accessToken;
+                // The signed-in user info.
+                var user = result.user;
+            }
+        ).catch((error)=>{
+            alert(error.message);
+        }).catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            // The email of the user's account used.
+            var email = error.email;
+            // The firebase.auth.AuthCredential type that was used.
+            var credential = error.credential;
+            // ...
+          });
+
+    }
+
+
     return (
         <div>
             <a href="/" className="exit-login"><AiOutlineCloseSquare/></a>
@@ -26,14 +55,13 @@ function Login() {
                 <button type="submit" className="button-Login">Zaloguj się</button>
                 <div className="auth-box">
                     <a href="/" className="facebook-auth" ><SiFacebook/></a>
-                    <a href="/" className="gmail-auth"><AiFillGoogleCircle/></a>
+                    <a onClick={signWithGoogle} className="gmail-auth"><AiFillGoogleCircle/></a>
                 </div>
                 <p className="text-register">Nie posiadasz konta? <a href="/register">Zarejestruj się</a></p>
             </div>
             </div>
         </div>
-      
     )
 }
 
-export default Login
+export default Login;

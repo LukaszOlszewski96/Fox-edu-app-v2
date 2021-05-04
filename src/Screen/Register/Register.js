@@ -6,11 +6,15 @@ import {BsPerson} from 'react-icons/bs'
 import {ImCheckboxUnchecked} from 'react-icons/im'
 import {IoChevronBackCircleOutline} from 'react-icons/io5'
 import {BiRocket} from 'react-icons/bi'
+import {HiMenu} from 'react-icons/hi'
 
 function Register() {
     return (
         <div className="register-conteiner" >
-            <a href="/login" className="back-to-login"><IoChevronBackCircleOutline/></a>
+            <div className="top-conteiner">
+                <a href="/login" className="back-to-login"><IoChevronBackCircleOutline/></a>
+                <a href="#" className="hamburger active"><HiMenu/></a>
+                </div>
             <div className="register-box">
                 <p className="title-register">Dane uczestnika e-szkoleń:</p>
                     <form className="input-form">
@@ -32,6 +36,10 @@ function Register() {
                     <form className="input-form">
                         <div className="icon-form"><RiLockPasswordLine/></div>
                         <input  className="input-text" type="password" placeholder="Hasło" name="userPassword" />
+                    </form>
+                    <form className="input-form">
+                        <div className="icon-form"><RiLockPasswordLine/></div>
+                        <input  className="input-text" type="password" placeholder="Powtórz hasło" name="userPassword" />
                     </form>
                     <a className="subscription active" href="/"><ImCheckboxUnchecked/> Chcę otrzymywać wiadomości e-mail z ofertami.</a>
                     <button className="button-register" >Zarejestruj się</button>

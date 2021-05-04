@@ -17,13 +17,15 @@
      width:  30vw;
      height: auto;
      display: block;
+     position: relative;
+     right: 5vw;
  }
  .login-image{
      width: auto;
      height: auto;
      position: relative;
-     right: 10vw;
-     top: 3vw;
+     right: 15vw;
+     top: 5vw;
  }
  .login-image img{
      height: 20vw;

@@ -6,7 +6,7 @@
 }
 .back-to-login{
     color: #fff;
-    font-size: 3vw;
+    font-size: 2.5vw;
     position: relative;
     left:1vw;
     top:1vw;
@@ -24,6 +24,7 @@
     font-size: .7vw;
     position: relative;
     left:2vw;
+    top:-1.5vw;
 }
 .button-register{
     outline: none;
@@ -37,7 +38,7 @@
     padding-left: 1vw;
     padding-right: 1vw;
     position: relative;
-    top: 4vw;
+    top: 2vw;
     right: 10vw;
     cursor: pointer;
 }
@@ -45,9 +46,17 @@
     font-size: .7vw;
     color: #fff;
     position: relative;
-    top: 7vw;
+    top: 3vw;
     left:2vw;
 }
 .political a{
     font-weight: bold;
+}
+.hamburger{
+    float: right;
+    color: #ffff;
+    font-size: 2.5vw;
+    position: relative;
+    right:1vw;
+    top:1vw;
 }
