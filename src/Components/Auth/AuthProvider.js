@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import app from 'firebase/app';
 
 
@@ -6,11 +6,10 @@ import app from 'firebase/app';
 export const AuthContext = React.createContext();
 
 export const AuthProvider = ({children}) => {
-    const[currentUser, setCurrentUser] = useState(null);
+    const[currentUser, setCurrentUser] =React.useState(null);
 
-    useEffect(() => {
+    React.useEffect(() => {
         app.auth().onAuthStateChanged(setCurrentUser);
-        
     },[]);
 
     return(
