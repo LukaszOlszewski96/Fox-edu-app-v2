@@ -13,6 +13,25 @@ import {provider, firebase} from '../../Firebase/Firebase';
 
 function Login() {
 
+
+    const [email, setEmail] = React.useState("");
+    const [password, setPassword] = React.useState("");
+
+     //Email/pass login
+     const loginEmailAndPass = () =>{
+        
+        firebase.auth().signInWithEmailAndPassword(email, password)
+        .then(() => {
+            alert("Weclome");
+        })
+        .catch((error) => {
+            alert(error.message);
+        });
+
+        setPassword("");
+        setEmail("");
+    };
+
     //Google auth system:
     const signWithGoogle =()=>{
 
@@ -99,11 +118,11 @@ function Login() {
                 <p className="text-login">Zaloguj się:</p>
                 <form className="input-form">
                     <div className="icon-form"><HiOutlineMail/></div>
-                    <input className="input-text" type="text" placeholder="E-mail"input/>
+                    <input value={email} onChange={(e)=>{setEmail(e.target.value)}} className="input-text" type="text" placeholder="E-mail"input/>
                 </form>
                 <form className="input-form">
                     <div className="icon-form"><RiLockPasswordLine/></div>
-                    <input className="input-text" type="password" placeholder="Hasło"input/>
+                    <input value={password} onChange={(e)=>{setPassword(e.target.value)}} className="input-text" type="password" placeholder="Hasło"input/>
                 </form>
                 <a className="remaind-password" href="/">Nie pamiętasz hasła?</a>
                 <button type="submit" className="button-Login">Zaloguj się</button>
