@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Education() {
+function Dashboard() {
 
     return (
         <div>
@@ -9,4 +9,4 @@ function Education() {
     )
 }
 
-export default Education;
+export default Dashboard;

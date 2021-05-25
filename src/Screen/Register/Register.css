@@ -1,0 +1,66 @@
+.main-conteiner-register{
+    background-color: #1F1F47;
+    height: 100vw;
+    width: 100vw;
+}
+.Register-conteiner{
+    width:  30vw;
+    height: auto;
+    display: block;
+    position: relative;
+    left: 35vw;
+}
+.text-register-screen{
+    color: #ffff;
+    font-size: 1.6vw;
+}
+.input-form-imie, .input-form-nazwisko, .input-form-email, .input-form-password{
+    display: flex;
+    width: 20vw;
+    height: 2.5vw;
+    border: #2f2f4ea1 solid 2px;
+    border-radius: 1vw;
+    margin-bottom: 1.5vw;
+    align-items: center;
+}
+.icon-imie, .icon-nazwisko, .icon-password, .icon-email{
+    color: #fff;
+    font-size: 1.5vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.input-text-imie, .input-text-nazwisko, .input-text-email, .input-text-password {
+    outline: none;
+    border: none;
+    border-radius: 1vw;
+    width: 100%;
+    padding-left: 1vw;
+    background-color: #1F1F47;
+}
+.subscription{
+    font-size: 1vw;
+    position: relative;
+    top:1vw;
+    left: 3vw;
+}
+.Button-Register{
+    width: 10vw;
+    height: 3vw;
+    background-color: #fff;
+    border-radius: 2vw;
+    position: relative;
+    top:3vw;
+    left:5vw;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.text-register{
+    position: relative;
+    top:3vw;
+    left: 0;
+}
+.text-register a{
+    position: relative;
+    font-size: 1vw;
+}

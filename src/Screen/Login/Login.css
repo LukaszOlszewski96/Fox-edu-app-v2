@@ -1,4 +1,9 @@
- .exit-login{
+.login-conteiner-screen{
+    background-color: #1F1F47;
+    height: 90vw;
+    width: 100vw;
+}
+.exit-login{
      font-size: 4vw;
      color: #fff;
      float: right;
