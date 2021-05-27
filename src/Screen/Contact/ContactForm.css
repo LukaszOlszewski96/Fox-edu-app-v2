@@ -61,5 +61,22 @@
     border: none;
 }
 .textarea-input-form{
-    
+    display: flex;
+    width: 20vw;
+    height: 10vw;
+    border: #2f2f4ea1 solid 2px;
+    border-radius: 1vw;
+    margin-bottom: 1.5vw;
+    margin-left: 1vw;
+}
+.text-area-input{
+    color: #ffff;
+    font-size: 1vw;
+    margin-left: 1vw;
+    width: 18vw;
+    height: 10vw;
+    background-color: #1F1F47;
+    outline: none;
+    border: none;
+    box-sizing: none;
 }
