@@ -33,7 +33,7 @@
     width: 30vw;
     position: relative;
     top: 9vw;
-    left: 30vw;
+    left: 38vw;
     display: block;
 }
 .name-input-form, .topic-input-form{
@@ -63,7 +63,7 @@
 .textarea-input-form{
     display: flex;
     width: 20vw;
-    height: 10vw;
+    height: 11vw;
     border: #2f2f4ea1 solid 2px;
     border-radius: 1vw;
     margin-bottom: 1.5vw;
@@ -72,11 +72,28 @@
 .text-area-input{
     color: #ffff;
     font-size: 1vw;
+    margin-top: .3vw;
     margin-left: 1vw;
     width: 18vw;
     height: 10vw;
     background-color: #1F1F47;
     outline: none;
     border: none;
-    box-sizing: none;
+    resize: none;
+    overflow-y: hidden;
+}
+.button-submit{
+    padding: 0.5vw 1.5vw 0.5vw 1.5vw;
+    float: right;
+    position: relative;
+    top: 3vw;
+    right: 17vw;
+    background-color: #7510F7;
+    color: #fff;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    font-size: 1vw;
+    font-weight: 500;
+    cursor: pointer;
 }
