@@ -2,16 +2,19 @@ export const courseCategory = [
     {
         title: "Elektryka",
         className: "course-link",
-        url: "#"
+        url: "#",
+        category: "Elektryka"
     },
     {
         title: "Automatyka",
         className: "course-link",
-        url: "#"
+        url: "#",
+        category: "Automatyka"
     },
     {
         title: "Programowanie PLC",
         className: "course-link",
-        url: "#"
+        url: "#",
+        category:"PLC"
     }
 ]

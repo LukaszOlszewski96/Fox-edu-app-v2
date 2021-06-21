@@ -6,6 +6,14 @@ import{ Products} from './Products';
 
 
 function Course() {
+
+    //Category filtter:
+    const[category, setCategory] = React.useState("");
+
+    const openPLC =()=>{
+
+    }
+
     return (
         <div className="course-conteiner">
         <div className="top-conteiner"><NavBar/></div>

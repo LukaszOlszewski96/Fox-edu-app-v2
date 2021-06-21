@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { ProductsContext } from '../Course/ProductsContext'
+import './Product.css';
 
 export const Products = () => {
 
@@ -8,21 +9,21 @@ export const Products = () => {
 
     return (
         <div className="product-frame">
-            <h1>Products</h1>}
+            <h1 className="title-products">Products</h1>}
             <div className='products-container'>
-                {products.length === 0 && <div>slow internet...no products to display</div>}
+                {products.length === 0 && <div>loading</div>}
                 {products.map(product => (
                     <div className='product-card' key={product.ProductID}>
                         <div className='product-img'>
                             <img src={product.ProductImg} alt="not found" />
                         </div>
                         <div className='product-name'>
-                            {product.ProductName}
+                            Tytuł: {product.ProductName}
                         </div>
                         <div className='product-price'>
-                            Rs {product.ProductPrice}.00
+                            Cena: {product.ProductPrice}.00
                     </div>
-                        <button>Add to cart</button>
+                        <button>Dodaj do koszyka</button>
                     </div>
                 ))}
             </div>
