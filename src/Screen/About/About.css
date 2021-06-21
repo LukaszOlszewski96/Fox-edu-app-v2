@@ -14,5 +14,11 @@
     font-size: 1vw;
     color: #fff;
     font-weight: lighter;
-    text-align: left;
+    text-align: center;
+    width: 50vw;
+}
+.abut-horizontal-box{
+    position: relative;
+    left: 25vw;
+    top: 10vw;
 }

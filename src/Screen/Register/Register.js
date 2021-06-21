@@ -3,7 +3,6 @@ import "./Register.css";
 import {HiOutlineMail} from 'react-icons/hi'
 import {RiLockPasswordLine} from 'react-icons/ri'
 import {BsPerson} from 'react-icons/bs'
-import {ImCheckboxUnchecked} from 'react-icons/im'
 import {IoChevronBackCircleOutline} from 'react-icons/io5'
 import {BiRocket} from 'react-icons/bi'
 import {HiMenu} from 'react-icons/hi'
@@ -27,7 +26,8 @@ function Register() {
                     firstName: name,
                     lastName: surname,
                     email: email,
-                    password: password
+                    password: password,
+                    accountName: accountName
                 }).then(() => {
                     alert("User has been submitted")
                 })
@@ -44,6 +44,8 @@ function Register() {
             setSurname("")
             setPassword("")
             setEmail("")
+            setAccountName("")
+
         };
 
     return (
@@ -74,13 +76,8 @@ function Register() {
                         <div className="icon-form"><RiLockPasswordLine/></div>
                         <input value={password} onChange={(e)=>{setPassword(e.target.value)}}  className="input-text" type="password" placeholder="Hasło" name="userPassword" />
                     </form>
-                    <form className="input-form">
-                        <div className="icon-form"><RiLockPasswordLine/></div>
-                        <input value={password} onChange={(e)=>{setPassword(e.target.value)}}  className="input-text" type="password" placeholder="Powtórz hasło" name="userPassword" />
-                    </form>
-                    <a className="subscription active" href="/"><ImCheckboxUnchecked/> Chcę otrzymywać wiadomości e-mail z ofertami.</a>
+                 
                     <button onClick={handleSumbit} type="submit" className="button-register" >Zarejestruj się</button>
-                    <p className="political">Rejestracja oznacza akceptację<a href="/"> Warunków użytkowania </a><br/> i <a href="/">Polityki</a> w zakresie<a href="/"> Ochrony prywatności</a>. </p>
             </div>
         </div>
     )

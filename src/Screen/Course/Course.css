@@ -1,0 +1,14 @@
+.course-box{
+    justify-content: center;
+    display: flex;
+    margin-top: 5vw;
+}
+.course-link{
+    background-color: rgba(117, 116, 116, 0.801);
+    margin-right: 5vw;
+    padding: 1.5vw 2vw 1.5vw 2vw;
+    border-radius: 2vw;
+}
+.course-link:hover{
+    background-color: rgba(59, 59, 59, 0.801);
+}

@@ -37,9 +37,10 @@
     padding-top: 0.5vw;
     padding-left: 1vw;
     padding-right: 1vw;
+    margin-bottom: 3vw;
     position: relative;
     top: 2vw;
-    right: 10vw;
+    left: 5vw;
     cursor: pointer;
 }
 .political{
@@ -59,4 +60,9 @@
     position: relative;
     right:1vw;
     top:1vw;
+}
+.subscription-label{
+    color: #fff;
+    font-size: 1vw;
+    margin-left: 1vw;
 }

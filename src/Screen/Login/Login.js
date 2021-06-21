@@ -125,7 +125,7 @@ function Login() {
                     <input value={password} onChange={(e)=>{setPassword(e.target.value)}} className="input-text" type="password" placeholder="Hasło"input/>
                 </form>
                 <a className="remaind-password" href="/">Nie pamiętasz hasła?</a>
-                <button type="submit" className="button-Login">Zaloguj się</button>
+                <button type="submit" className="button-Login" onClick={loginEmailAndPass}>Zaloguj się</button>
                 <div className="auth-box">
                     <a  onClick={signInFacebook} className="facebook-auth" ><SiFacebook/></a>
                     <a  onClick={signWithGoogle} className="gmail-auth"><AiFillGoogleCircle/></a>

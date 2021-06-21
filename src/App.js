@@ -9,9 +9,11 @@ import Dashboard from './Screen/Dashboard/Dashboard';
 import Home from './Screen/Home/Home';
 import Login from './Screen/Login/Login';
 import Register from './Screen/Register/Register';
+import { ProductsContextProvider } from './Screen/Course/ProductsContext';
 
 function App() {
   return (
+    <ProductsContextProvider>
     <AuthProvider>
       <Router>
           <Switch>
@@ -25,6 +27,7 @@ function App() {
           </Switch>
       </Router>
     </AuthProvider>
+    </ProductsContextProvider>
   );
 }
 
