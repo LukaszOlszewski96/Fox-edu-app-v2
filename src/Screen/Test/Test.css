@@ -1,0 +1,31 @@
+.test-conteiner{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vw;
+    display: block;
+}
+.title-test{
+    color: #ffff;
+    font-size: 4vw;
+    text-align: center;
+}
+.test-task li{
+    color: #fff;
+    font-size: 1vw;
+    margin-top: 5vw;
+}
+.test-task{
+    position: relative;
+    left: 30vw;
+}
+.form-box{
+    margin-top: 2vw;
+}
+.form-box label{
+    margin-right: 2vw;
+}
+.text-area{
+    height: 10vw;
+    width: 30vw;
+}

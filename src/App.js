@@ -10,6 +10,7 @@ import Home from './Screen/Home/Home';
 import Login from './Screen/Login/Login';
 import Register from './Screen/Register/Register';
 import { ProductsContextProvider } from './Screen/Course/ProductsContext';
+import Test from './Screen/Test/Test';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/course" component={Course}/>
             <Route path="/about" component={About}/>
             <Route path="/contact" component={ContactForm}/>
+            <Route path="/test" component={Test}/>
             <PrivateRoute path="/dashboard" component={Dashboard} />
           </Switch>
       </Router>
