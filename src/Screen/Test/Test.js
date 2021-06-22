@@ -21,6 +21,10 @@ function Test() {
         }
     };
 
+    document.onscroll = function(e) {
+        alert('Przewijam!');
+    };
+
     for (const [index, value] of ladVariable.entries()) {
         items.push(<a href="https://www.lipsum.com/" key={index}>{value}</a>)
       }
