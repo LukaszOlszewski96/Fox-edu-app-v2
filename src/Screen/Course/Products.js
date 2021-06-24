@@ -1,11 +1,28 @@
 import React, { useContext } from 'react'
 import { ProductsContext } from '../Course/ProductsContext'
 import './Product.css';
+import {db, auth} from '../../Firebase/Firebase'
 
 export const Products = () => {
 
     const { products } = useContext(ProductsContext);
 
+    let courseID = null;
+
+    const addCourse = () => {
+        var currentUser =  auth().currentUser.uid;
+        courseID = document.getElementById("button-course").value;
+
+    
+        db.collection('user').doc(currentUser).collection('courses-user').doc(courseID).set({
+            dane:  courseID
+        }).then(() => {
+            alert("Course has been submitted")
+        })
+        .catch((error) => {
+            alert(error.message);
+        });
+    };
 
     return (
         <div className="product-frame">
@@ -23,7 +40,7 @@ export const Products = () => {
                         <div className='product-price'>
                             Cena: {product.ProductPrice}.00
                     </div>
-                        <button>Dodaj do koszyka</button>
+                        <button onClick={addCourse} value="6DtbZCDRDgAzPPCZGlET">Dodaj</button>
                     </div>
                 ))}
             </div>
