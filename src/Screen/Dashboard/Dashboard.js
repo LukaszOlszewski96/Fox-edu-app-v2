@@ -45,7 +45,7 @@ require('firebase/auth')
                         setProductPrice(0)
                         setProductImg('');
                         setError('');
-                        document.getElementById('file').value = '';
+                        document.getElementById('file').value = ''; 
                     }).catch(err => setError(err.message))
                 })
             })
